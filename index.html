@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        screens:{
+            xs: "300px",
+            sm: "640px",
+            md: "768px",
+            xl: "1280px",
+            ["2xl"]: "1530px" 
+        },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- --hero -->
+   <section class=" md:h-screen xs:h-full relative bg-white" id="home">
+    <nav class="absolute right-0 left-0  py-2 md:px-14 xs:px-3  pt-6  grid  grid-cols-12 rounded-xl text-[#141414] items-center">
+        <div class="flex justify-between items-center col-span-7">
+          <div>
+            <div class="w-[150px]">
+              <img src="images/Asset 116.png" class="w-full h-full object-cover" alt="">
+            </div>
+        </div>
+        <div class="list-none flex gap-6 pr-6 text-[15px] md:flex xs:hidden">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#pricing"> Pricing</a></li>
+            <li><a href="#benefit">Benefits</a></li>
+            <li><a href="#contact"> Contact</a></li>
+        </div>
+        </div>
+        <div class="col-span-5 flex justify-end md:flex xs:hidden">
+            
+            <button class=" border py-2 bg-[#fff] px-6 rounded-md">Reserve a Sit </button>
+        </div>
+    </nav>
+    <main class=" grid grid-cols-12 gap-y-10  h-full md:pt-0 p-3  xs:pt-20 ">
+        <div class="md:col-span-7 xs:col-span-12 ">
+          <div class="flex flex-col gap-14 justify-center pt-10 h-full md:pl-10">
+            <div class="flex flex-col gap-2">
+              <small class="text-gray-500 font-light">Welcome to BugGy HuB – Your Ideal Workspace Hub</small>
+              <h1 class="md:text-[50px] xs:text-[30px] leading-[1] font-bold ">Discover the Perfect Workspace at BugGy HuB</h1>
+              <p class="md:text-[20px] max-w-[500px] pt-4">A serene environment equipped with everything you need for productivity.</p>
+
+          </div>
+          <div>
+              <button class=" bg-[#e5aa2d] text-[#fff] h-[60px] w-[300px] rounded-md  ">Reserve A Sit Now</button>
+          </div>
+          </div>
+        </div>
+        <div class="md:col-span-5 xs:col-span-12 flex justify-center  ">
+            <div class="h-full rounded-xl overflow-hidden border-4
+            shadow-xl border-white">
+              <img src="https://img.freepik.com/free-photo/smiling-businesswoman-with-laptop-document-wooden-table-restaurant_23-2147936146.jpg?t=st=1722097450~exp=1722101050~hmac=e2dc3c757a8c456082299a217196c4d4bc75c163e89a2e16fde8f99d72a40020&w=996" alt="" class="w-full h-full object-cover">
+                <!-- <img src="https://ouch-cdn2.icons8.com/RvRNYhp4R3LJjkx0AARG6NnU9S2FZwERDdL6Q3r3w2c/rs:fit:368:244/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvODEv/ZmU5Y2Q5OTgtZDAz/My00MTI1LTliNTQt/MmRlNDBjMDIyZDQ5/LnBuZw.png" alt="" class="w-full h-full object-cover"> -->
+            </div>
+        </div>
+
+    </main>
+   </section> 
+   <!-- -- about -->
+   <section class=" md:p-20 xs:py-20 xs:p-3 bg-white py-30 md:h-screen" id="about">
+          <div class="grid grid-cols-12 gap-y-6">
+            <div class="md:col-span-4 xs:col-span-12">
+            <p class=" text-[20px] text-gray-500">About BugGy HuB</p>
+
+            </div>
+          <!-- <h1 class="text-center text-[50px] leading-[1]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, rerum.
+          </h1> -->
+            <div class="md:col-span-8 xs:col-span-12">
+              <p class="md:text-[35px]  max-w-[700px] m-auto">At BugGy HuB, we provide a conducive workspace that enhances your productivity. Whether you're a freelancer, entrepreneur, or remote worker, our hub offers the perfect environment for you to work efficiently and comfortably.</p>
+            </div>
+          </div>
+   </section>
+   
+   <!-- --Pricing -->
+    <section class="md:p-20 xs:p-3 xs:py-20  px-16 md:h-screen " id="pricing">
+     <div>
+      <div class="pb-10">
+        <h1 class="md:text-[50px] xs:text-[30px]">Flexible Pricing Plans</h1>
+      <p class="text-[20px] pb-10">Choose a plan that suits your needs:</p>
+      </div>
+      <div class="flex justify-between text-[#eff6f8] flex-wrap">
+        <div class="md:w-[350px] xs:w-full bg-[#e5aa2d] hover:scale-105 transition-all rounded-2xl border border-2 border-white shadow-xl grid items-center p-10">
+          <div>
+            <span>Daily</span>
+          <h1 class="md:text-[50px] xs:text-[25px] tracking-tighter">N1500 </h1>
+          <p>click to reserve your sit for today</p>
+          </div>
+        </div>
+        <div class="md:w-[350px] xs:w-full bg-[#796fab] hover:scale-105 transition-all  rounded-2xl border border-2 border-white shadow-xl grid items-center p-10">
+          <div>
+            <span>Weekly</span>
+          <h1 class="md:text-[50px] xs:text-[25px] tracking-tighter">N8000</h1>
+          <p>click to reserve your sit for the weeek</p>
+
+          </div>
+        </div>
+        <div class="md:w-[350px] xs:w-full bg-[#e487bc] hover:scale-105 transition-all  rounded-2xl border border-2 border-white shadow-xl grid items-center p-10">
+         <div>
+          <span>Monthly</span>
+          <h1 class="md:text-[50px] xs:text-[25px] tracking-tighter">N25,000</h1>
+          <p>click to reserve your sit for the month</p>
+
+         </div>
+        </div>
+      </div>
+     </div>
+
+    </section>
+     <!-- benefit section -->
+     <section class="md:p-20 xs:p-3 xs:py-20 px-16  grid items-center bg-white md:h-screen" id="benefit">
+      <div>
+       <h1 class=" md:text-[50px] xs:text-[30px] pb-10 text-[#242424]">Why Choose BugGy HuB?</h1>
+       <div class=" flex xs:flex-wrap md:flex-no-wrap items-center justify-between gap-3 text-[#fff]">
+         <div class="md:w-[350px] py-4 px-8 md:h-[100px] grid place-items-center bg-[#e5aa2d] rounded-xl border-2 border-[#fff] shadow-xl  text-[20px]">24/7 Electricity</div>
+         <div class="md:w-[350px] py-4 px-8 md:h-[100px] grid place-items-center bg-[#e5aa2d] rounded-xl border-2 border-[#fff] shadow-xl  text-[20px]">Comfortable Furniture</div>
+         <div class="md:w-[350px] py-4 px-8 md:h-[100px] grid place-items-center bg-[#e5aa2d] rounded-xl border-2 border-[#fff] shadow-xl  text-[20px]">A Quiet Environment</div>
+         <div class="md:w-[350px] py-4 px-8 md:h-[100px] grid place-items-center bg-[#e5aa2d] rounded-xl border-2 border-[#fff] shadow-xl  text-[20px]">Additional Wi-Fi to work with</div>
+         <div class="md:w-[350px] py-4 px-8 md:h-[100px] grid place-items-center bg-[#e5aa2d] rounded-xl border-2 border-[#fff] shadow-xl  text-[20px]">55" Large Screen for presentations</div>
+         <div class="md:w-[350px] py-4 px-8 md:h-[100px] grid place-items-center bg-[#e5aa2d] rounded-xl border-2 border-[#fff] shadow-xl  text-[20px]">Air Conditioned ventilation system</div>
+       </div>
+      </div>
+     </section>
+   
+    <!-- call-to-action -->
+    <section class="md:p-20 xs:p-3 xs:py-20 px-16 h-screen  backdrop-blur-lg bg-[url('https://hub.buggybillions.com/hero2.jpg')] bg-no-repeat bg-cover grid place-items-center">
+      <div class="absolute top-0 bottom-0 right-0  left-0 bg-[#00000055] z-1 backdrop-blur-sm"></div>
+      <div class=" z-10 relative grid place-items-center">
+        <div class=" grid place-items-center">
+          <h1 class="text-[#eff6f8] md:text-[50px] xs:text-[30px] max-w-[800px] text-center leading-[1]">Ready to experience the best workspace environment?</h1>
+          
+         <a href="https://wa.me/2347010015366?text=Hello%2C%20I%20am%20interested%20in%20the%20software%20engineering%20course%2C%20I%20will%20save%20your%20contact%20as%20Buggy%2C%20save%20mine%20as" class="mt-10">
+          <button class="bg-[#eff6f8] h-[60px] w-[300px] rounded-md ">
+            Reserve Your Sit Now
+          </button>
+         </a>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="relative md:p-20 xs:p-3 xs:py-20 px-16 h-screen grid items-center " id="contact">
+      
+        <div class=" grid grid-cols-12 h-full z-10">
+          <div class="md:col-span-4 xs:col-span-12 bg-[#FFF] p-10  flex flex-col justify-center gap-6 rounded-xl h-full">
+            <div>
+              <h2 class="text-[40px] pb-4">Get in Touch</h2>
+              <p class="md:text-[20px] leading-[1] pb-8">For more information or to book a spot, contact us:</p>
+            </div>
+            <div>
+              <div class="flex gap-2 items-center">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <p class="text-[20px]">example#@gmail.com</p>
+                
+              </div>
+              <div class="flex gap-2 items-center">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <p class="text-[20px]">example#@gmail.com</p>
+                
+              </div>
+              <div class="flex gap-2 items-center">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <p class="text-[20px]">example#@gmail.com</p>
+                
+              </div>
+             
+            </div>
+          </div>
+          <div class="md:col-span-8 xs:col-span-12 md:px-20 xs:px-3 py-10">
+            <div class="">
+              <form action="#" class="flex flex-col gap-6">
+                <div class="grid grid-cols-2 gap-4">
+                  <div class="flex flex-col">
+                    <label for="name"  class="text-[]">Name</label>
+                    <input type="text" name="name" placeholder="" class="bg-[#242424] h-[40px] rounded-md bg-[#fff] px-4 py-1">
+                  </div>
+                  <div class="flex flex-col">
+                    <label for="name"  class="text-[]">Email Address </label>
+                    <input type="text" name="name" placeholder="" class="bg-[#242424] h-[40px] rounded-md bg-[#fff] px-4 py-1">
+                  </div>
+                </div>
+                <div class="flex flex-col">
+                  <label for="message" class="text-[]">Your message</label>
+                  <textarea name="message" id="" class="bg-[#fff] rounded-md h-[200px] px-4 py-1"></textarea>
+                </div>
+               <div>
+                <button class="py-4 px-10 bg-[#e5aa2d] rounded-md text-[#eff6f8]">Send the Message</button>
+               </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+    </section>
+    <!-- footer -->
+    <footer class="h-[70vh] md:p-20 xs:p-3 xs:py-20 px-16 bg-[#242424] text-[#eff6f8] flex flex-col justify-between ">
+      <div class="grid grid-cols-12 gap-10">
+        <div class="md:col-span-6 xs:col-span-12">
+          <div>
+           
+          </div>
+          <b class="pb-4">Our Address </b>
+          <p class="max-w-[350px] text-gray-500">Suntoy Building, Adjacent Winners Chapel, Along Ogbomoso-Ilorin Old Road</p>
+        </div>
+        <div class="md:col-span-3 xs:col-span-6">
+            <ul class="flex flex-col gap-2">
+              <b class="pb-4">Social Links</b>
+              <li><a href="https://www.instagram.com/buggybillions_ng?igsh=c3hmMWdkNG1xb3Q4" class="text-gray-500">Instagram</a></li>
+              <li><a href="https://x.com/BuggyBillionsng?t=RNzZTahjujNodiLgzIeRCA&s=09" class="text-gray-500">Twitter</a></li>
+              <li><a href="https://wa.me/2347010015366?text=Hello%2C%20I%20am%20interested%20in%20the%20software%20engineering%20course%2C%20I%20will%20save%20your%20contact%20as%20Buggy%2C%20save%20mine%20as" class="text-gray-500">WhatsApp</a></li>
+              
+            </ul>
+        </div>
+        <div class="md:col-span-3 xs:col-span-6">
+          <ul class="flex flex-col gap-2">
+            <b class="pb-4">Links</b>
+            <li><a href="index.html" class="text-gray-500">Home</a></li>
+            <li><a href="#about" class="text-gray-500">About</a></li>
+            <li><a href="#pricing" class="text-gray-500">Pricing</a></li>
+            <li><a href="#benefit" class="text-gray-500">Benefits</a></li>
+            <li><a href="#contact" class="text-gray-500">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-5 border-top border-grey relative bottom-0 font-sans text-gray-500">
+        <div class="grid grid-cols-12">
+          <div class=" md:col-span-4 xs:col-span-6">
+            <small class="p-0 m-0">
+              &copy;Copyright 2024 @ buggybillions
+            </small>
+          </div>
+          <div class="md:col-span-4">
+            <h6 class="p-0 m-0">
+              BugGy HuB
+            </h6>
+          </div>
+          <div class="md:col-span-4 flex justify-end">
+            <small>
+              All rights reserved.
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/d15ccd782a.js" crossorigin="anonymous"></script>
+   
+</body>
+</html>
