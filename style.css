@@ -1,8 +1,6 @@
-/* In your main CSS file (e.g., styles.css) */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 @font-face {
     font-family: 'Ttnorm';
@@ -16,13 +14,70 @@
     font-weight: normal;
     font-style: normal;
 }
+body, html{
+    overflow-x: hidden !important;
+    scroll-behavior: smooth !important;
+}
+::-webkit-scrollbar{
+    display: none;
+}
 h1,h2,h3,h4,h5,h6{
 
     font-family: 'Ttnorm', sans-serif;
 }
 body {
     font-family: 'Ttnorm2', sans-serif;
-    background: #e5ab2d20;
+    /* background: #e5ab2d20; */
     background: #eff6f8;
     
+}
+#pricing .st0{fill:#F3F3F3 !important;}
+.thiss {
+    padding-top: 24px;
+    position: fixed;
+    top: 0;
+    width: inherit;
+    transition: all 0.3s ease;
+    background: transparent;
+    z-index: 1000 !important;
+}
+.navbtn{
+    margin-right: 6px;
+}
+.thiss.nowsticky {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px 20px;
+}
+.thiss.open {
+    height: max-content;
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+}
+.thiss.nowsticky .navbtn {
+    margin-right: 0px;
+    background-color: #e5aa2d;
+}
+.thiss.nowsticky .nav-links {
+  width: 65%;
+}
+
+.made-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    .thiss.nowsticky .nav-brand img:nth-child(1){
+        display: block !important;
+    }
+    .thiss.open{
+        padding: 20px;
+    }
+    .thiss.nowsticky .second-links{
+        color: #282828;
+    }
+    .thiss.nowsticky .nav-brand img:nth-child(2){
+        display: none !important;
+    }
 }
