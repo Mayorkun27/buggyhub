@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.css">
   <script>
     tailwind.config = {
       theme: {
@@ -128,14 +127,14 @@
   </section>
    
    <!-- Pricing -->
-  <section class="md:py-20 py-16 lg:h-screen" id="pricing">
+  <section class="md:py-20 py-16 lg:min-h-screen" id="pricing">
     <div class="made-container">
       <div class="md:pb-10 pb-6">
         <h1 class="md:text-[50px] text-[30px]">Flexible Pricing Plans</h1>
         <p class="text-[20px] pb-10">Choose a plan that suits your needs:</p>
       </div>
-      <div class="grid grid-cols-6 items-start justify-between gap-8 text-[#eff6f8]">
-        <div class="group relative overflow-hidden z-1 lg:col-span-2 md:col-span-3 col-span-6 bg-[#e5aa2d] hover:scale-105 transition-all rounded-2xl border-2 border-white shadow-xl flex items-center p-6 h-[200px]">
+      <div class="grid grid-cols-8 items-start justify-between gap-8 text-[#eff6f8]">
+        <div class="group relative overflow-hidden z-1 lg:col-span-4 md:col-span-4 col-span-8 bg-[#e5aa2d] hover:scale-105 transition-all rounded-2xl border-2 border-white shadow-xl flex items-center p-6 h-[200px]">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 739.02 739.02" class="absolute right-0 -bottom-1/3 group-hover:scale-150 transistion-all duration-300 w-1/3 -rotate-[16deg] opacity-15" style="overflow:visible;enable-background:new 0 0 739.02 739.02;" xml:space="preserve">
             <defs></defs>
             <path class="st0" d="M602.02,739.02H137c-75.66,0-137-61.34-137-137V137C0,61.34,61.34,0,137,0h465.02c75.66,0,137,61.34,137,137
@@ -147,7 +146,7 @@
             <p class="md:text-base text-sm -leading-0.5">Click to reserve your seat for today</p>
           </div>
         </div>
-        <div class="group relative overflow-hidden z-1 lg:col-span-2 md:col-span-3 col-span-6 bg-[#796fab] hover:scale-105 transition-all  rounded-2xl border-2 border-white shadow-xl flex items-center p-6 h-[200px]">
+        <div class="group relative overflow-hidden z-1 lg:col-span-4 md:col-span-4 col-span-8 bg-[#796fab] hover:scale-105 transition-all  rounded-2xl border-2 border-white shadow-xl flex items-center p-6 h-[200px]">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="210px" height="210px" viewBox="0 0 634.84 604.3" class="absolute right-0 -bottom-1/3 group-hover:scale-150 transistion-all duration-300 w-2/5 -rotate-[16deg] opacity-15" style="overflow:visible;enable-background:new 0 0 634.84 604.3;" xml:space="preserve">
             <defs></defs>
             <path class="st0" d="M634.84,288.82V562c0,23.36-18.94,42.3-42.3,42.3H468.59c-23.36,0-42.3-18.94-42.3-42.3V419.14
@@ -161,7 +160,7 @@
             <p class="md:text-base text-sm -leading-0.5">Click to reserve your seat for the week</p>
           </div>
         </div>
-        <div class="group relative overflow-hidden z-1 lg:col-span-2 md:col-span-6 col-span-6 bg-[#e487bc] hover:scale-105 transition-all  rounded-2xl border-2 border-white shadow-xl flex items-center p-6 h-[200px]">
+        <div class="group relative overflow-hidden z-1 lg:col-span-4 md:col-span-4 col-span-8 bg-[#e487bc] hover:scale-105 transition-all  rounded-2xl border-2 border-white shadow-xl flex items-center p-6 h-[200px]">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="410px" height="410px" viewBox="0 -15 100 100" class="absolute -right-[20%] -bottom-[80%] group-hover:scale-150 transistion-all duration-300 w-3/4 -rotate-[16deg] opacity-15" style="overflow:visible; enable-background:new 0 0 100 100;">
             <path class="st0" d="M50 7c1.5 0 2.8 0.9 3.4 2.3l5.8 12.3 13.5 2c1.5 0.2 2.7 1.2 3.1 2.6 0.4 1.4-0.1 2.9-1.2 3.8l-9.8 9.5 2.3 13.4c0.3 1.5-0.4 3-1.6 3.8-1.2 0.9-2.8 1-4 0l-12-6.3-12 6.3c-1.3 0.7-2.8 0.6-4 0-1.2-0.8-1.8-2.3-1.6-3.8l2.3-13.4-9.8-9.5c-1.1-1-1.6-2.5-1.2-3.8 0.4-1.4 1.6-2.4 3.1-2.6l13.5-2L46.6 9.3C47.2 7.9 48.5 7 50 7z" />
           </svg>
@@ -169,6 +168,21 @@
             <span>Monthly</span>
             <h1 class="md:text-[50px] text-[45px] tracking-tighter">N25,000</h1>
             <p class="md:text-base text-sm -leading-0.5">Click to reserve your seat for the month</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden z-1 lg:col-span-4 md:col-span-4 col-span-8 bg-[#e5aa2d] hover:scale-105 transition-all  rounded-2xl border-2 border-white shadow-xl flex items-center p-6 h-[200px]">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="410px" height="410px" viewBox="0 0 1054.35 916.89" class="absolute -right-[20%] -bottom-[80%] group-hover:scale-150 transistion-all duration-300 w-3/4 -rotate-[16deg] opacity-15" style="overflow:visible;enable-background:new 0 0 1054.35 916.89;" xml:space="preserve">
+            <style type="text/css">.st0{fill:#F3F3F3;}</style>
+            <defs></defs>
+            <path class="st0" d="M494.17,896.51L307.35,616.49c-12.75-19.12-9.37-44.72,7.91-59.87l165.98-145.49
+            c38.43-33.68,1.19-95.47-46.54-77.24l-217.57,83.11c-19.98,7.63-42.58,0.42-54.45-17.37L7.76,167.45
+            c-19.18-28.75-0.84-67.57,33.55-71l962.58-96.2c37.13-3.71,62.88,36.15,44.23,68.47L571.95,893.98
+            C554.98,923.4,513.02,924.76,494.17,896.51z"></path>
+          </svg>
+          <div class="relative z-1">
+            <span>Student</span>
+            <h1 class="md:text-[50px] text-[45px] tracking-tighter">Discounted</h1>
+            <p class="md:text-base text-sm -leading-0.5">Click to reserve your seat as a student</p>
           </div>
         </div>
       </div>
